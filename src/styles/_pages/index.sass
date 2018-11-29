@@ -1,2 +1,156 @@
 body
 	background: #dfdfdf
+.header
+	background: $main
+	color: #ffffff
+	font-size: 1.2rem
+	.btn-home,
+	.btn-home:hover,
+	.navbar-toggler,
+	.nav-link,
+		color: #ffffff
+		text-align: center
+	// ẩn nút dropdown toggle
+	.dropdown-toggle
+		&:after
+			display: none
+
+	// input search
+	#btn-search
+		border-radius: 5px
+		border: 1px solid $main
+		padding-left: 1rem
+		padding-right: 1rem
+
+
+	// mobile
+	.navbar
+		padding: .2rem 2rem
+	.dropdowntag
+		.dropdown-menu
+			text-align: center
+			background: lighten($main, 20%)
+			border: none
+			.dropdown-item,
+			.dropdown-item:active,
+			.dropdown-item:focus
+				color: #ffffff
+				background: lighten($main, 20%)
+			.dropdown-item:focus
+				color: lighten($main, 25%)
+				background: #ffffff
+	// kích thước md
+	+media-breakpoint-up(md)
+		.navbar
+			padding: .2rem 2rem
+			flex-wrap: nowrap
+			.navbar-nav
+				flex-direction: row
+				padding: 0
+				margin-left: 4rem
+				text-align: center
+				justify-content: flex-start
+				align-items: center
+				.nav-item
+					padding: 0 .5rem
+		.dropdowntag
+			position: relative
+			.dropdown-menu
+				position: absolute
+				background: lighten($main,20%)
+				padding: 0
+				padding-right: 2rem
+				min-width: 5rem
+				.dropdown-item
+					&:hover,
+					&:focus
+						color: #ffffff
+						background: lighten($main,20%)
+
+
+// body//
+
+//section Home
+.home
+	background: $whites
+	.container
+		max-width: 100%
+		padding: 1rem 0
+		+media-breakpoint-up(md)
+		.slideshow
+			.boximg
+				position: relative
+				.figc
+					position: absolute
+					display: inline-block
+					background: rgba(0,0,0,0.4)
+					top: 100%
+					transform: translateY(-100%)
+					left: 0
+					padding-left: 1rem
+					h2,
+					p
+						color: $whites
+
+		.news
+			h2
+				text-align: center
+				color: #ffffff
+				background: $main
+				padding: .2rem 0
+				margin-bottom: 0
+		.news-item
+			padding-top: .5rem
+			border: 1px solid $main
+		ul
+			list-style-type: none
+			text-align: left
+			padding-left: 2rem
+			li
+				a
+					text-decoration: underline
+		.hot-news
+			margin-left: 1rem
+			margin-right: 1rem
+			h4
+				border-bottom: 1px solid $main
+			.h4-content
+				padding-left: .5rem
+				display: inline-block
+				background: $main
+				color: $whites
+				min-width: 15rem
+				border-radius: 3px 3px 0 0
+			h5
+				text-indent: 1rem
+			.content
+				text-indent: 2rem
+
+		.article
+			ul
+				padding-left: 0
+				li
+					background: red
+					text-align: center
+					a
+						color: $whites
+						text-decoration: none
+	+media-breakpoint-up(md)
+		.container
+			padding: 0 2rem
+			.slideshow
+				img
+					max-height: 380px
+			.news
+				.news-item
+					max-width: 300px
+					overflow: scroll
+					ul
+						padding-left: 1.5rem
+//footer
+.footer
+	text-align: center
+	background: $main
+	color: $whites
+	.container-fluid
+		padding: 3rem 0

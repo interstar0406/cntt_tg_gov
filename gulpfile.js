@@ -22,7 +22,7 @@ gulp.task('default', function (callback) {
 		'concat-js',
 		'tao-sass',
 		'tao-js',
-		'tao-php',
+		'tao-html',
 		'watch',
 		'browser-sync',
 		callback

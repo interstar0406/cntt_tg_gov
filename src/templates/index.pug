@@ -9,9 +9,68 @@ block body
 	section.home
 		.container
 			.row
-				.col.p-4
-					.jumbotron.text-center
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
+				.col-md-9
+					.row
+						.col-md-12
+							.row
+								.col-md-9.slideshow
+									figure.figure-fluid
+										.boximg
+											img(src="./img/slideshow/slideshow(1).jpg", alt="slideshow" width="100%")
+											figcaption.figc
+												h2 Phun Thuốc, xịt phòng
+												p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio nostrum quo repellat necessitatibus, ducimus obcaecati reiciendis nisi eum nam ipsam eveniet iure aut dignissimos nulla voluptatem tempore eaque vitae!
+								.col-md-3.news
+									h2.mt-5.mt-md-3 Tin mới nhất
+									.news-item
+										ul
+											-for(x=0; x<8; x++)
+												li
+													a(href="#")
+														h3 Tin mới nhất #{x+1}
+						.col-md-12
+							.row.hot-news.mt-4
+								.col-md-12
+									h4
+										span.h4-content Chính trị
+									h5 Huyện Cái Bè: Thu nhập và đời sống văn hóa, tinh thần của người dân được nâng cao.
+									p.content Qua hơn hai năm thực hiện Nghị quyết Đại hội Đảng bộ huyện Cái Bè khóa IX, nhiệm kỳ 2015 - 2020, kinh tế của huyện tiếp tục phát triển; sản xuất nông nghiệp từng bước đi vào chiều sâu, mang lại hiệu quả, thu nhập cao hơn cho người nông dân; đời sống văn hóa, tinh thần của người dân được nâng lên rõ rệt.
+
+								.col-md-12
+									h4
+										span.h4-content Kinh tế
+									h5 Central Group Việt Nam khai trương mô hình kinh doanh mới: Trung tâm Thương mại Dịch vụ GO! Mỹ Tho
+									p.content Ngày 14/11/2018, GO! Mỹ Tho, một Trung tâm Thương mại Dịch vụ hiện đại ở Tiền Giang đã chính thức khai trương đi vào hoạt động tại khu đất số 545, đường Lê Văn Phẩm, Phường 5, TP. Mỹ Tho. Ông Lê Văn Nghĩa, Ủy viên Ban Thường vụ Tỉnh ủy, Phó Chủ tịch UBND tỉnh đã đến tham dự buổi lễ.
+				.col-md-3.article.mt-4
+					ul
+						li
+							a(href="#")
+								h3 Thủ tục hành chính
+						li
+							a(href="#")
+								h3 Văn bản điện tử
+						li
+							a(href="#")
+								h3 Hệ thống văn bản
+						li
+							a(href="#")
+								h3 Dự án mới gọi đầu tư
+						li
+							a(href="#")
+								h3 Thông tin quy hoạch
+						li
+							a(href="#")
+								h3 Thủ tục hành chính
+						li
+							a(href="#")
+								h3 Văn bản điện tử
+						li
+							a(href="#")
+								h3 Hệ thống văn bản
+						li
+							a(href="#")
+								h3 Dự án mới gọi đầu tư
+						li
+							a(href="#")
+								h3 Thông tin quy hoạch
 

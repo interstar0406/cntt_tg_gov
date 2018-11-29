@@ -1,4 +1,31 @@
 <!-- ////////////// HEADER ////////////// -->
-header.text-center.p-3
-	
+header.header
+	img.img-fluid(src="./img/banner_3.jpg" alt="banner" width="100%")
+	nav.navbar
+		a.btn-home(href="#")
+			i.fa.fa-home
+		.searchbar
+			input#btn-search(type="text", name="search" placeholder="Search here ~")
+		button.navbar-toggler#toggle(type='button', data-toggle='collapse', data-target='#MenuHeader', aria-controls='MenuHeader', aria-expanded='false', aria-label='Toggle navigation')
+			span.fa.fa-bars
+		#MenuHeader.collapse.navbar-collapse
+			ul.navbar-nav
+				li.nav-item
+					.dropdowntag
+						a.nav-link.dropdown-toggle#navitemDropdownCQ(href='#' role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Chính quyền
+						.dropdown-menu(aria-labelledby="navitemDropdownCQ")
+							a.btn-primary.dropdown-item(href="#") Giới thiệu
+				li.nav-item
+					a.nav-link(href='#') Công dân
+				li.nav-item
+					a.nav-link(href='#') Doanh nghiệp
+				li.nav-item
+					a.nav-link(href='#') Du khách
+				li.nav-item
+					a.nav-link(href='#') Tin tức
+				li.nav-item
+					a.nav-link(href='#') Quy hoạch
+				li.nav-item
+					a.nav-link(href='#') Thành viên
+		
 <!-- ////////////// HEADER ////////////// -->
